@@ -24,8 +24,8 @@ function App() {
     const solverDirect = new DirectSolver()
     const uniqueSolver = new UniqueSolver()
 
-    const [sd, setSd] = useState(SudokuFactory.readFromString(sudoku2str))
-    const [sdOld, setSdOld] = useState(SudokuFactory.readFromString(sudoku2str))
+    const [sd, setSd] = useState(SudokuFactory.readFromString(sudoku1str))
+    const [sdOld, setSdOld] = useState(SudokuFactory.readFromString(sudoku1str))
     
     const showHints: SudokuAny<ShowHint> = sd.mapSudoku((v, i, j, sd) => {
         return {
