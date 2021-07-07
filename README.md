@@ -37,4 +37,5 @@ mv build docs
 git add .
 git commit -m "update gh-pages"
 git push
+git checkout main
 ```
